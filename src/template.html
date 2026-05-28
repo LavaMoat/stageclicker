@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html,
+    body,
+    div {
+      margin: 0;
+      padding: 0;
+      font: normal 20px/28px sans-serif;
+      color: #e0e0e0;
+      background: #1a1a1a;
+    }
+
+    #main {
+      max-width: 800px;
+      margin: 3em auto;
+    }
+
+    .bookmarklet {
+      display: inline-block;
+      padding: .5em 1em;
+      color: #1a1a2e;
+      font-weight: bold;
+      background: #50dcf3;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+
+    img { 
+      max-width: 100%;
+      margin: 1em;
+    }
+
+    p {
+      margin: 1em;
+    }
+
+    ul {
+      margin: 3em 0;
+    }
+
+    a {
+      color: #6ecff6;
+    }
+
+    .dim {
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="main">
+    <h1>One click OIDC Staging setup for NPM</h1>
+
+    <h3>Installation:</h3>
+    <p>
+      Drag this button to your bookmarks bar to save it as a bookmarklet:
+    </p>
+    <p>
+      <a class="bookmarklet" href="javascript:__CODE__">STAGE!</a>
+    </p>
+
+    <h3>Usage:</h3>
+    <p>
+      Go to your package as a privileged user and click the bookmark. All you need to do is enter 2fa. You'll be asked for the workflow name once per repository.
+    </p>
+    <p>
+      Environment is hardcoded to "<code>npm</code>" so use that for environment name in github.
+      
+      <img src="./img/2.png" alt="workflow name prompt" />
+    </p>
+    <ul class="dim">
+      <li>It's not a browser driver, so it can't steal your session or your 2fa token - this code is garbage collected
+        before you navigate away to the 2FA screen. </li>
+      <li> It's not an extension, so it can't get updated with malware. </li>
+      <li> You can inspect all the code if you want. </li>
+    </ul>
+    🌋 Brought to you by <a href="https://lavamoat.github.io/">LavaMoat</a>
+  </div>
+</body>
+
+</html>

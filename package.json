@@ -1,0 +1,28 @@
+{
+  "name": "here",
+  "version": "1.0.0",
+  "description": "automation for staged publish setup",
+  "type":"module",
+  "private":true,
+  "scripts": {
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LavaMoat/stageclicker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LavaMoat/stageclicker/issues"
+  },
+  "homepage": "https://github.com/LavaMoat/stageclicker#readme",
+  "dependencies": {
+    "bookmarklet": "3.0.0"
+  },
+  "devDependencies": {
+    "@lavamoat/allow-scripts": "^5.0.2",
+    "@lavamoat/preinstall-always-fail": "^3.0.0"
+  }
+}
